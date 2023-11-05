@@ -1,7 +1,7 @@
 'use client'
 import { motion } from 'framer-motion'
 import emailjs from 'emailjs-com'; 
-import { animationProps} from '@/variants'
+import { animationProps} from '../variants'
 import { useState } from 'react';
 import Link from 'next/link';
 
