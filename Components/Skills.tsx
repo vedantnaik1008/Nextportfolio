@@ -1,6 +1,6 @@
 'use client'
 import { motion } from 'framer-motion'
-import { animationProps} from '../variants'
+import { animationProps} from '@/variants'
 import { SiNextdotjs, SiJavascript, SiTailwindcss, SiTypescript, SiReact, SiRedux, SiHtml5, SiCss3 } from 'react-icons/si'
 const Icons = [
   {id: '1', icon: <SiHtml5 size={50}/>},

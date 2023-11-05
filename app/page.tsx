@@ -1,9 +1,9 @@
-import About from '@/Components/About'
-import Banner from '@/Components/Banner'
-import Contact from '@/Components/Contact'
-import Header from '@/Components/Header'
-import Skills from '@/Components/Skills'
-import Work from '@/Components/Work'
+import About from '@/components/About'
+import Banner from '@/components/Banner'
+import Contact from '@/components/Contact'
+import Header from '@/components/Header'
+import Skills from '@/components/Skills'
+import Work from '@/components/Work'
 
 export default function Home() {
   return (

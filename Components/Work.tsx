@@ -1,10 +1,10 @@
 'use client'
 import { useState } from 'react';
-import img1 from '../images/canva-design-movie-min.webp';
-import img3 from '../images/QuickKart-min.webp';
+import img1 from '@/images/canva-design-movie-min.webp';
+import img3 from '@/images/QuickKart-min.webp';
 import {MdClose} from "react-icons/md"
 import { motion } from 'framer-motion';
-import { animationProps } from '../variants';
+import { animationProps } from '@/variants';
 import ReactPlayer from 'react-player'
 import Image from 'next/image';
 

@@ -1,7 +1,7 @@
 'use client'
-import Images from '../images/web-programming-languages.webp'
+import Images from '@/images/web-programming-languages.webp'
 import { motion } from 'framer-motion'
-import {animationProps} from '../variants'
+import {animationProps} from '@/variants'
 import { Link } from 'react-scroll'
 import Image from 'next/image'
 
