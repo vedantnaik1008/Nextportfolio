@@ -1,6 +1,6 @@
 'use client'
 import { useEffect, useRef, useState } from "react";
-import Nav from "../components/Nav"
+import Nav from "./Nav"
 import { BiSolidUpArrow } from "react-icons/bi"
 
 const Header = () => {
