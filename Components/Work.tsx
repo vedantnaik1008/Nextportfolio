@@ -5,12 +5,11 @@ import img3 from '../images/QuickKart-min.webp';
 import {MdClose} from "react-icons/md"
 import { motion } from 'framer-motion';
 import { animationProps } from '../variants';
-import ReactPlayer from 'react-player'
+import ReactPlayer from 'react-player/lazy'
 import Image from 'next/image';
-
 const projectData = [
-  {id:"1", image: img3, video: 'https://www.awesomescreenshot.com/video/22055560?key=5193a2e591b25d64e22b2a1990adbf6e', teckStack: ["TAILWIND", "JAVASCRIPT", "TYPESCRIPT", "REACT.JS", "NEXT.JS", "REDUX", "HANKO AUTH","STRIPE"], title: "QuickKart",  anchor:'https://quickkart3.netlify.app/', github: 'https://github.com/vedantnaik1008/Ecommerce'},
-  {id:"2", image: img1, video: 'https://www.awesomescreenshot.com/video/22055560?key=5193a2e591b25d64e22b2a1990adbf6e', teckStack: ["HTML", "CSS", "BOOTSTRAP", "JAVASCRIPT", "TYPESCRIPT", "REACT.JS",], title: "Yeh Movie Web App",  anchor:'https://movie-app-yeh.netlify.app/', github: 'https://github.com/vedantnaik1008/react-movie-search-app'},
+  {id:"1", image: img3, video: 'https://youtu.be/mMW29HKG5LQ', teckStack: ["TAILWIND", "JAVASCRIPT", "TYPESCRIPT", "REACT.JS", "NEXT.JS", "REDUX", "HANKO AUTH","STRIPE"], title: "QuickKart",  anchor:'https://quickkart3.netlify.app/', github: 'https://github.com/vedantnaik1008/Ecommerce'},
+  {id:"2", image: img1, video: 'https://youtu.be/rQBR0Ds_STk', teckStack: ["HTML", "CSS", "BOOTSTRAP", "JAVASCRIPT", "TYPESCRIPT", "REACT.JS",], title: "Yeh Movie Web App",  anchor:'https://movie-app-yeh.netlify.app/', github: 'https://github.com/vedantnaik1008/react-movie-search-app'},
 ]
 
 const Work = () => {
@@ -38,7 +37,7 @@ const Work = () => {
         <button onClick={() => setIsClicked('')}  className=' drop-shadow-2xl border-[#5a5a5a] border-[2px] rounded-full w-[40px] h-[40px] bg-[#181818] text-xl absolute min-[320px]:right-[40%]  min-[320px]:-top-12 min-[500px]:-right-12 min-[500px]:-top-4 md:-right-20 md:-top-10 flex items-center justify-center'><MdClose size="28px" color="white"/></button>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 h-full">
           <div className="">
-            <ReactPlayer controls={true} url={Modal.video}/>
+            <ReactPlayer controls={true} width="100%" height='100%' url={Modal.video}/>
           </div>
           <div className="w-[100%] h-full">
             <h1 className="text-center text-white text-2xl underline underline-offset-8">{Modal.title}</h1>
