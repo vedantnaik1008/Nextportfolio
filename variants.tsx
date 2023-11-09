@@ -1,3 +1,4 @@
+'use client'
 export const fadeIn = (direction:'up' | 'down' | 'left' | 'right' , delay: number) => {
     return {
       hidden: {
@@ -19,15 +20,11 @@ export const fadeIn = (direction:'up' | 'down' | 'left' | 'right' , delay: numbe
     };
   };
 
- let isMobile;
+ 
+ 
 
- if (typeof window !== 'undefined') {
-  isMobile = window.innerWidth <= 768; 
- }
 
- export const animationProps = isMobile
-    ? { }
-    : {
+ export const animationProps =  {
       variants: fadeIn('up', 0.3),
       initial: 'hidden',
       whileInView: 'show',
