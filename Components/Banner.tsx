@@ -12,7 +12,7 @@ const Banner = () => {
           
 
           <div {...animationProps} className='self-center sm:order-first lg:order-last'>
-            <Image priority={true} width={400} height={400} src={Images} alt="person-img" className='rounded-xl object-cover'/>
+            <Image priority={true} width={400} height={400} src={Images} alt="person-img" className='rounded-xl bg-cover'/>
           </div>
           <div className='flex-1 text-center font-secondary lg:text-left'>
             <h1 {...animationProps} className='text-[55px] text-white font-bold leading-[0.8] lg:text-[110px] mt-8'>Hi there, welcome</h1>

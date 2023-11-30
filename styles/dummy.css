@@ -67,7 +67,7 @@
     @apply py-8 lg:py-24 lg:h-screen flex items-center;
   }
   .section-two {
-    @apply py-8 lg:py-24 flex items-center;
+    @apply py-8 lg:py-24  flex items-center;
   }
   .navigation{
     @apply min-[320px]:translate-x-[150%] min-[320px]:duration-500 min-[320px]:transition-all

@@ -16,11 +16,11 @@ const About = () => {
   const age = currentDate.getFullYear() - birthdate.getFullYear();
 
   return (
-    <section className="section justify-center pb-[50%] md:pb-[50%] lg:pb-[0]" id="about" ref={ref}>
+    <section className="section justify-center items-center pb-[50%] md:pb-[50%] lg:pb-[0]" id="about" ref={ref}>
       <div className="container mx-auto">
-        <div className="flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen">
+        <div className="flex flex-col justify-center gap-y-10 lg:flex-row items-center lg:gap-x-20 lg:gap-y-0 h-screen">
           <motion.div {...animationProps}  className="md:flex-1 bg-contain bg-no-repeat  bg-top">
-            <Image width={545} height={341} loading='lazy' src={img} alt="img" className='xs:invisible md:visible rounded-full'/>
+            <Image width={545} height={341} loading='lazy' src={img} alt="img" className='xs:hidden md:block rounded-full'/>
           </motion.div>
           <motion.div {...animationProps} className="flex-1">
             <h2 className="h2 text-white">About me.</h2>
