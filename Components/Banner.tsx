@@ -18,7 +18,7 @@ const Banner = () => {
                             priority={true}
                             width={400}
                             height={400}
-                            sizes=''
+                            sizes='(min-width: 640px) 400px, (min-width: 380px) 290px, calc(33.33vw + 170px)'
                             src={Images}
                             alt='person-img'
                             className='rounded-xl bg-cover bg-cent'
