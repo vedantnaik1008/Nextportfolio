@@ -17,7 +17,7 @@ const About = () => {
 
     return (
         <section
-            className='section justify-center items-center pb-[50%] md:pb-[50%] lg:pb-[0]'
+            className='section justify-center items-center'
             id='about'
             ref={ref}>
             <div className='container mx-auto'>

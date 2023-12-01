@@ -48,7 +48,7 @@ const Work = () => {
     const [isClicked, setIsClicked] = useState('');
     return (
         <>
-            <section className='section-two' id='work'>
+            <section className='section' id='work'>
                 <div className='w-[90%] mx-auto'>
                     <h2 className='h2 leading-tight text-center text-white mt-6'>
                         My Latest Projects
