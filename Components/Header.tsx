@@ -51,10 +51,10 @@ const Header = () => {
     return (
         <>
             <div
-                className='py-2 fixed z-50 bg-transparent backdrop-blur-3xl w-full'
+                className='py-2 px-4 fixed z-50 bg-transparent backdrop-blur-3xl w-full'
                 ref={ref}
                 id='navbar'>
-                <div className='container mx-auto'>
+                <div className=''>
                     <div className='flex justify-between items-center'>
                         <a href='#' className=''>
                             <h1 className='text-white font-bold font-cursi'>
