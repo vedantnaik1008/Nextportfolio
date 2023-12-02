@@ -23,7 +23,7 @@ const projectData = [
             'STRIPE',
         ],
         title: 'QuickKart',
-        anchor: 'https://quickkart3.netlify.app/',
+        anchor: 'https://ecommerce-qk.vercel.app/',
         github: 'https://github.com/vedantnaik1008/Ecommerce',
     },
     {
