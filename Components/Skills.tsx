@@ -24,7 +24,7 @@ const Icons = [
 
 const Skills = () => {
     return (
-        <section className='section' id='skills'>
+        <section className='section lg:h-screen' id='skills'>
             <motion.div className='container mx-auto' {...animationProps}>
                 <h2 className='h2 leading-tight text-center text-white'>
                     My Skills
@@ -34,7 +34,7 @@ const Skills = () => {
                         <div
                             key={icon.id}
                             className='flex flex-col gap-y-4 items-center justify-center'>
-                            <span className='text-[#FFFFFF]  hover:opacity-70  transition duration-1500 ease-in'>
+                            <span className='text-[#FFFFFF] hover:opacity-70  transition duration-1500 ease-in'>
                                 {icon.icon}
                             </span>
                             <p className='text-[#FFFFFF]'>{icon.name}</p>

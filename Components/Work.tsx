@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import img1 from '../images/canva-design-movie-min.webp';
 import img3 from '../images/QuickKart-min.webp';
+import img4 from "../images/Untitled design my portfolio.webp";
 import { MdClose } from 'react-icons/md';
 import { motion } from 'framer-motion';
 import { animationProps } from '../variants';
@@ -37,18 +38,35 @@ const projectData = [
             'JAVASCRIPT',
             'TYPESCRIPT',
             'REACT.JS',
+            "AUTH0",
         ],
-        title: 'Yeh Movie Web App',
-        anchor: 'https://movie-app-yeh.netlify.app/',
+        title: 'Movie Hub',
+        anchor: 'https://movie-hub-yeh.vercel.app/',
         github: 'https://github.com/vedantnaik1008/react-movie-search-app',
     },
+    {
+        id: '3',
+        image: img4,
+        video: 'https://youtu.be/Zc7R1OPBJ5k',
+        teckStack: [
+            'TAILWIND',
+            'JAVASCRIPT',
+            'TYPESCRIPT',
+            'REACT.JS',
+            'NEXT.JS',
+            'FRAMER-MOTION',
+        ],
+        title: 'My Portfolio',
+        anchor: '/',
+        github: 'https://github.com/vedantnaik1008/Nextportfolio',
+    }
 ];
 
 const Work = () => {
     const [isClicked, setIsClicked] = useState('');
     return (
         <>
-            <section className='section' id='work'>
+            <section className='py-24 flex items-center' id='work'>
                 <div className='w-[90%] mx-auto'>
                     <h2 className='h2 leading-tight text-center text-white mt-6'>
                         My Latest Projects
