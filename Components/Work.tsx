@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import img1 from '../images/canva-design-movie-min.webp';
+import img1 from '../images/movie-hub-image.webp';
 import img3 from '../images/QuickKart-min.webp';
 import img4 from "../images/Untitled design my portfolio.webp";
 import { MdClose } from 'react-icons/md';
@@ -30,7 +30,7 @@ const projectData = [
     {
         id: '2',
         image: img1,
-        video: 'https://youtu.be/rQBR0Ds_STk',
+        video: 'https://youtu.be/K5tPX47fJsc',
         teckStack: [
             'HTML',
             'CSS',
