@@ -25,7 +25,7 @@ const Icons = [
 const Skills = () => {
     return (
         <section className='section lg:h-screen' id='skills'>
-            <motion.div className='container mx-auto' {...animationProps}>
+            <motion.div className='w-[90%] mx-auto' {...animationProps}>
                 <h2 className='h2 leading-tight text-center text-white'>
                     My Skills
                 </h2>

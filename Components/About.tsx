@@ -20,7 +20,7 @@ const About = () => {
             className='section justify-center items-center'
             id='about'
             ref={ref}>
-            <div className='container mx-auto'>
+            <div className='w-[90%] mx-auto'>
                 <div className='flex flex-col justify-center gap-y-10 lg:flex-row items-center lg:gap-x-20 lg:gap-y-0 h-screen'>
                     <motion.div
                         {...animationProps}
