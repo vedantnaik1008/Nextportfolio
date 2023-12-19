@@ -6,7 +6,7 @@ import img4 from "../images/Untitled design my portfolio.webp";
 import { MdClose } from 'react-icons/md';
 import { motion } from 'framer-motion';
 import { animationProps } from '../variants';
-import ReactPlayer from 'react-player/lazy';
+import ReactPlayer from 'react-player';
 import Image from 'next/image';
 const projectData = [
     {
