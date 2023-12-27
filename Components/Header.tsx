@@ -1,52 +1,10 @@
 'use client';
-import { useEffect, useRef, useState } from 'react';
+import useScroll from '@/hook/useScroll';
 import Nav from './Nav';
 import { BiSolidUpArrow } from 'react-icons/bi';
 
 const Header = () => {
-    const ref = useRef<HTMLDivElement>(null);
-    const [isVisible, setIsVisible] = useState(false);
-
-    const handleScroll = () => {
-        if (window.scrollY > 500) {
-            setIsVisible(true);
-        } else {
-            setIsVisible(false);
-        }
-    };
-
-    const handleClick = () => {
-        if (ref.current) {
-            const offset = 100;
-            const targetPosition = ref.current?.offsetTop - offset;
-            window.scrollTo({
-                top: targetPosition,
-                behavior: 'smooth',
-            });
-        }
-    };
-
-    useEffect(() => {
-        const onScroll = () => {
-            const scrollPosition = window.scrollY;
-            if (scrollPosition > 80) {
-                document.getElementById('navbar')?.classList.add('shad');
-            } else {
-                document.getElementById('navbar')?.classList.remove('shad');
-            }
-        };
-
-        window.addEventListener('scroll', onScroll);
-
-        return () => window.removeEventListener('scroll', onScroll);
-    }, []);
-
-    useEffect(() => {
-        window.addEventListener('scroll', handleScroll);
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
+    const {ref, isVisible, handleClick} = useScroll()
 
     return (
         <>
