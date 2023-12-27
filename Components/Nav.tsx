@@ -63,9 +63,6 @@ const Navbar: React.FC = () => {
             <div
                 className='flex flex-col gap-1 md:hidden absolute top-3 right-5  '
                 onClick={() => setShow(!show)}>
-                {/* <span className='w-[25px] h-[4px] bg-white rounded-sm'></span>
-                <span className='w-[18px] h-[4px] ml-auto bg-white rounded-sm'></span>
-                <span className='w-[10px] h-[4px] ml-auto bg-white rounded-sm'></span> */}
                 <FaBarsStaggered size="25px" color="white"/>
             </div>
             
