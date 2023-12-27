@@ -24,18 +24,18 @@ const About = () => {
                 <div className='flex flex-col justify-center gap-y-10 lg:flex-row items-center lg:gap-x-20 lg:gap-y-0 h-screen'>
                     <motion.div
                         {...animationProps}
-                        className='md:flex-1 bg-contain bg-no-repeat  bg-top'>
+                        className=''>
                         <Image
                             width={545}
                             height={341}
                             loading='lazy'
                             src={img}
                             alt='img'
-                            className='xs:hidden md:block rounded-full'
+                            className='xs:hidden md:block rounded-lg'
                             sizes='(min-width: 1200px) 545px, (min-width: 960px) 425px, (min-width: 840px) 545px, calc(52.88vw + 111px)'
                         />
                     </motion.div>
-                    <motion.div {...animationProps} className='flex-1'>
+                    <motion.div {...animationProps} className=''>
                         <h2 className='h2 text-white'>About me.</h2>
                         <h3 className='h3 mb-4 text-white'>
                             I&apos;m Self taught frontend developer
