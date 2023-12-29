@@ -35,7 +35,7 @@ export const projectData = [
             'AUTH0'
         ],
         title: 'Movie Hub',
-        anchor: 'https://movie-hub-yeh.vercel.app/',
+        anchor: 'https://movie-hub30.vercel.app/',
         github: 'https://github.com/vedantnaik1008/react-movie-search-app'
     },
     {
