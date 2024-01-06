@@ -1,10 +1,11 @@
 'use client';
+import dynamic from 'next/dynamic';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { animationProps } from '../variants';
 import Image from 'next/image';
 import { projectData } from '@/data/ProjectData';
-import Modal from './Modal';
+const Modal = dynamic(()=>import('./Modal'),{ ssr: false });
 
 const Work = () => {
     const [isClicked, setIsClicked] = useState('');
