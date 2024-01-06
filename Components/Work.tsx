@@ -29,7 +29,7 @@ const Work = () => {
                                     width={576}
                                     height={400}
                                     sizes='(min-width: 960px) 45vw, 90vw'
-                                    className='group-hover:scale-125 transition-all duration-500 w-[100%] h-[400px] object-cover bg-cover bg-center'
+                                    className='group-hover:scale-125 w-[100%] transition-all duration-500 object-cover bg-cover bg-center'
                                     src={project.image}
                                     alt='project-img'
                                 />
