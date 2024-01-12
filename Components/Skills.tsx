@@ -1,15 +1,15 @@
 'use client';
 import { motion } from 'framer-motion';
 import { animationProps } from '../variants';
-import Image from 'next/image';
-import Html from '@/public/3d/html.png';
-import Css from '@/public/3d/css3.png';
-import Tailwind from '@/public/3d/tailwind.png';
-import js from '@/public/3d/javascript.png';
-import Typescript from '@/public/3d/typescript(1).png';
-import Reactjs from '@/public/3d/react (1).png';
-import Redux from '@/public/iconsImages/redux.webp';
-import Nextjs from '@/public/iconsImages/next-js-logo.webp';
+// import Image from 'next/image';
+// import Html from '@/public/3d/html.png';
+// import Css from '@/public/3d/css3.png';
+// import Tailwind from '@/public/3d/tailwind.png';
+// import js from '@/public/3d/javascript.png';
+// import Typescript from '@/public/3d/typescript(1).png';
+// import Reactjs from '@/public/3d/react (1).png';
+// import Redux from '@/public/iconsImages/redux.webp';
+// import Nextjs from '@/public/iconsImages/next-js-logo.webp';
 
 const Skills = () => {
     return (
