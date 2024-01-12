@@ -1,6 +1,5 @@
 import { projectData } from '@/data/ProjectData';
 import React from 'react';
-import { MdClose } from 'react-icons/md';
 import ReactPlayer from 'react-player';
 
 type Props = {
@@ -22,7 +21,20 @@ const Modal = ({ isClicked, setIsClicked }: Props) => {
                                     <button
                                         onClick={() => setIsClicked('')}
                                         className=' drop-shadow-2xl border-[#5a5a5a] border-[2px] rounded-full w-[40px] h-[40px] bg-[#181818] text-xl absolute min-[320px]:right-[40%]  min-[320px]:-top-12 min-[500px]:-right-12 min-[500px]:-top-4 md:-right-20 md:-top-10 flex items-center justify-center'>
-                                        <MdClose size='28px' color='white' />
+                                        <svg
+                                            stroke='currentColor'
+                                            fill='currentColor'
+                                            stroke-width='0'
+                                            viewBox='0 0 24 24'
+                                            color='white'
+                                            height='28px'
+                                            width='28px'
+                                            xmlns='http://www.w3.org/2000/svg'>
+                                            <path
+                                                fill='none'
+                                                d='M0 0h24v24H0z'></path>
+                                            <path d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'></path>
+                                        </svg>
                                     </button>
                                     <div className='grid grid-cols-1 md:grid-cols-2 gap-5 h-full'>
                                         <div className=''>
