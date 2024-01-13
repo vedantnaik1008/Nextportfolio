@@ -15,7 +15,8 @@ const Banner = () => {
                         {...animationProps}
                         className='self-center sm:order-first lg:order-last'>
                         <Image
-                            priority={true}
+                            priority
+                            fetchPriority='high'
                             width={400}
                             height={400}
                             sizes='(min-width: 640px) 400px, (min-width: 380px) 290px, calc(33.33vw + 170px)'
