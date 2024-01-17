@@ -34,7 +34,7 @@ const Work = () => {
                                     src={project.image}
                                     alt='project-img'
                                 />
-                                <div className='absolute -top-[50%] left-[45%] group-hover:top-[50%] transition-all duration-500 z-40'>
+                                <div className='absolute -top-[50%] left-[40%] md:left-[45%] group-hover:top-[50%] transition-all duration-500 z-40'>
                                     <span
                                         onClick={() => setIsClicked(project.id)}
                                         className='text-3xl text-white text-gradient'>
