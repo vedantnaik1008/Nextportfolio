@@ -80,7 +80,7 @@ const About = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='flex flex-wrap gap-4 items-center'>
+                        <div className='flex items-center'>
                             <Link
                                 href='contact'
                                 to='contact'
@@ -91,12 +91,6 @@ const About = () => {
                                     Contact Me
                                 </button>
                             </Link>
-                            <a
-                                href='/Frontend_Developer_Resume.pdf'
-                                download
-                                className='py-4 btn-tweet hover:scale-105 bg-[#FFFFFF] shadow-[inset_0_-4px_0_0_rgba(0,0,0,.25)]  btn-lg  transition-all duration-300 ease-out'>
-                                Resume
-                            </a>
                         </div>
                     </motion.div>
                 </div>
