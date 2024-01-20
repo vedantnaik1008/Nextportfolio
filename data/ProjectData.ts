@@ -6,7 +6,7 @@ export const projectData = [
     {
         id: '1',
         image: img3,
-        video: 'https://youtu.be/mMW29HKG5LQ',
+        video: 'https://youtu.be/iRwy0MeEHlY',
         teckStack: [
             'TAILWIND',
             'JAVASCRIPT',
@@ -24,7 +24,7 @@ export const projectData = [
     {
         id: '2',
         image: img1,
-        video: 'https://youtu.be/K5tPX47fJsc',
+        video: 'https://youtu.be/Nqzj6jIoNMY',
         teckStack: [
             'HTML',
             'CSS',
@@ -41,7 +41,7 @@ export const projectData = [
     {
         id: '3',
         image: img4,
-        video: 'https://youtu.be/Zc7R1OPBJ5k',
+        video: 'https://youtu.be/NOKbPiBOTaY',
         teckStack: [
             'TAILWIND',
             'JAVASCRIPT',

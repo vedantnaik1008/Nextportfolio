@@ -39,6 +39,9 @@
     .h2 {
         @apply text-[32px] mb-6 tracking-[10%] uppercase;
     }
+    .backdrop-hack {
+    @apply absolute inset-0 -z-10;
+  }
     .h3 {
         @apply font-semibold text-[26px] mb-6 leading-[46px];
     }
