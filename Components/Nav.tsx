@@ -46,7 +46,7 @@ const Navbar = ({ show, setShow }: Props) => {
                         activeClass='active-on'
                         smooth={true}
                         spy={true}
-                        offset={15}
+                        offset={20}
                         className='cursor-pointer  active text-white'>
                         Projects
                     </Link>
