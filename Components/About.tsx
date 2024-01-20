@@ -6,11 +6,10 @@ import { animationProps } from '../variants';
 import img from '../images/10-Skill-yang-Harus-Dimiliki-Front-End-Developer.webp';
 import { Link } from 'react-scroll';
 import Image from 'next/image';
-import ResumeBtn from './ResumeBtn';
 
 const About = () => {
     const [ref, inView] = useInView({
-        threshold: 0.5,
+        threshold: 0.5
     });
     const birthdate = new Date('2002-01-25');
     const currentDate = new Date();
@@ -92,7 +91,12 @@ const About = () => {
                                     Contact Me
                                 </button>
                             </Link>
-                            <ResumeBtn />
+                            <a
+                                href='/Frontend_Developer_Resume.pdf'
+                                download
+                                className='py-4 btn-tweet hover:scale-105 bg-[#FFFFFF] shadow-[inset_0_-4px_0_0_rgba(0,0,0,.25)]  btn-lg  transition-all duration-300 ease-out'>
+                                Resume
+                            </a>
                         </div>
                     </motion.div>
                 </div>
