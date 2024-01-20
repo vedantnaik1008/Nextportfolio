@@ -31,7 +31,7 @@ const Skills = () => {
                             Javascript
                         </p>
                     </div>
-                    <div className='rounded-xl border-[2px] border-[#5a5a5a]  mx-auto xl:col-span-2 h-[200px] w-full bg-[#2f74c0]'>
+                    <div className='rounded-xl overflow-hidden border-[2px] border-[#5a5a5a]  mx-auto xl:col-span-2 h-[200px] w-full bg-[#2f74c0]'>
                         <p className='text-white text-6xl lg:text-5xl font-bold align-middle h-full flex justify-center items-center'>
                             Typescript
                         </p>
