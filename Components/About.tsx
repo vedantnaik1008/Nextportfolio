@@ -6,6 +6,7 @@ import { animationProps } from '../variants';
 import img from '../images/10-Skill-yang-Harus-Dimiliki-Front-End-Developer.webp';
 import { Link } from 'react-scroll';
 import Image from 'next/image';
+import ResumeBtn from './ResumeBtn';
 
 const About = () => {
     const [ref, inView] = useInView({
@@ -22,9 +23,7 @@ const About = () => {
             ref={ref}>
             <div className='w-[90%] mx-auto'>
                 <div className='flex flex-col justify-center gap-y-10 lg:flex-row items-center lg:gap-x-20 lg:gap-y-0 h-screen'>
-                    <motion.div
-                        {...animationProps}
-                        className=''>
+                    <motion.div {...animationProps} className=''>
                         <Image
                             width={545}
                             height={341}
@@ -82,7 +81,7 @@ const About = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='flex gap-x-8 items-center'>
+                        <div className='flex flex-wrap gap-4 items-center'>
                             <Link
                                 href='contact'
                                 to='contact'
@@ -93,6 +92,7 @@ const About = () => {
                                     Contact Me
                                 </button>
                             </Link>
+                            <ResumeBtn />
                         </div>
                     </motion.div>
                 </div>
