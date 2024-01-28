@@ -53,7 +53,7 @@ const Banner = () => {
                                 </button>
                             </Link>
                             <a
-                                href='/Vedant_Naik.pdf'
+                                href='/Vedant_Naik_3.pdf'
                                 download
                                 className='py-4 btn-tweet hover:scale-105 bg-[#FFFFFF] shadow-[inset_0_-4px_0_0_rgba(0,0,0,.25)]  btn-lg  transition-all duration-300 ease-out'>
                                 Resume
