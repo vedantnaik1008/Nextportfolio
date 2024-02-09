@@ -16,6 +16,7 @@ const Banner = () => {
                         className='self-center sm:order-first lg:order-last'>
                         <Image
                             priority={true}
+                            placeholder ='blur'
                             width={400}
                             height={400}
                             sizes='(min-width: 640px) 400px, (min-width: 380px) 290px, calc(33.33vw + 170px)'
