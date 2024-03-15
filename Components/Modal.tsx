@@ -1,6 +1,7 @@
 import { projectData } from '@/data/ProjectData';
 import React from 'react';
 import ReactPlayer from 'react-player';
+import LoadingSpinner from './LoadingSpinner';
 
 type Props = {
     isClicked: string;
@@ -39,6 +40,7 @@ const Modal = ({ isClicked, setIsClicked }: Props) => {
                                     <div className='grid grid-cols-1 md:grid-cols-2 gap-5 h-full'>
                                         <div className=''>
                                             <ReactPlayer
+                                                fallback={<LoadingSpinner />}
                                                 controls={true}
                                                 width='100%'
                                                 height='100%'
