@@ -1,7 +1,7 @@
-import img1 from '../images/movie-hub-image.webp';
-import img3 from '../images/QuickKart-min.webp';
-import img4 from '../images/Untitled design my portfolio.webp';
-import img5 from '../images/Car-rental.webp'
+import img1 from '../images/79shots_so.png';
+import img3 from '../images/453shots_so.png';
+import img4 from '../images/41shots_so.png';
+import img5 from '../images/4shots_so.png'
 export const projectData = [
     {
         id: '1',
