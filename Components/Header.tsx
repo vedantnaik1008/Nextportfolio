@@ -11,7 +11,7 @@ const Header = () => {
 
     return (
         <>
-            <div
+            <header
                 className='select-none xs:py-4 md:py-2 px-8 fixed left-[5%] backdrop-blur-3xl z-50 bg-transparent w-[90%] mt-5 rounded-[30px]'
                 ref={ref}
                 id='navbar'>
@@ -24,7 +24,7 @@ const Header = () => {
                     <Nav show={show} setShow={setShow} />
                 </div>
                 {show && <MobileNav show={show} setShow={setShow} />}
-            </div>
+            </header>
             {isVisible && (
                 <GoTopBtn handleClick={handleClick} />
             )}
