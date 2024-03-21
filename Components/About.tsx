@@ -1,25 +1,22 @@
 'use client';
 import Countup from 'react-countup';
-import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 import { animationProps } from '../variants';
 import img from '../images/10-Skill-yang-Harus-Dimiliki-Front-End-Developer.webp';
 import { Link } from 'react-scroll';
 import Image from 'next/image';
+import { useInView } from 'react-intersection-observer';
 
 const About = () => {
-    const [ref, inView] = useInView({
-        threshold: 0.5
-    });
+   const [ref, inView] = useInView({
+    threshold: 0.5
+});
     const birthdate = new Date('2002-01-25');
     const currentDate = new Date();
     const age = currentDate.getFullYear() - birthdate.getFullYear();
 
     return (
-        <section
-            className='section justify-center items-center'
-            id='about'
-            ref={ref}>
+        <section className='section justify-center items-center' id='about'>
             <div className='w-[90%] mx-auto'>
                 <div className='flex flex-col justify-center gap-y-10 lg:flex-row items-center lg:gap-x-20 lg:gap-y-0 h-screen'>
                     <motion.div {...animationProps} className=''>
@@ -44,7 +41,25 @@ const About = () => {
                             education
                             <br />I am from Goa, India
                         </p>
-                        <div className='flex gap-x-6 lg:gap-x-10 mb-12'>
+                        <div className='flex flex-wrap gap-6 lg:gap-x-10 mb-12' ref={ref}>
+                            <div className=''>
+                                <div className='text-[40px] font-tertiary text-white mb-2'>
+                                    {inView ? (
+                                        <Countup
+                                            start={0}
+                                            end={2}
+                                            duration={3}
+                                        />
+                                    ) : null}
+                                </div>
+
+                                <div className='font-primary text-sm tracking-[2px] text-white'>
+                                    Years of <br />
+                                    Experience
+                                    <br />
+                                    with Frontend
+                                </div>
+                            </div>
                             <div className=''>
                                 <div className='text-[40px] font-tertiary text-white mb-2'>
                                     {inView ? (
