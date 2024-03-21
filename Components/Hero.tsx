@@ -4,7 +4,7 @@ import { animationProps } from '../variants';
 import { Link } from 'react-scroll';
 import Image from 'next/image';
 
-const Banner = () => {
+const Hero = () => {
     return (
         <section
             className='min-h-[85vh] md:min-h-[75vh] flex items-center mt-28 container-1'
@@ -16,7 +16,7 @@ const Banner = () => {
                         className='self-center sm:order-first lg:order-last'>
                         <Image
                             priority={true}
-                            placeholder ='blur'
+                            placeholder='blur'
                             width={400}
                             height={400}
                             sizes='(min-width: 640px) 400px, (min-width: 380px) 290px, calc(33.33vw + 170px)'
@@ -39,26 +39,26 @@ const Banner = () => {
                             skills. If you are interested in my skills, please
                             contact me or message me on Twitter.
                         </p>
-                        <div
-                            {...animationProps}
-                            className='flex max-w-max gap-6 flex-wrap items-center justify-center mb-12 mx-auto lg:mx-0'>
-                            <Link
-                                href='contact'
-                                to='contact'
-                                offset={-28}
-                                smooth={true}
-                                spy={true}>
-                                <button className='btn-tweet hover:scale-105 bg-[#FFFFFF] shadow-[inset_0_-4px_0_0_rgba(0,0,0,.25)]  btn-lg  transition-all duration-300 ease-out'>
-                                    Contact me
-                                </button>
-                            </Link>
-                            <a
-                                href='/Vedant_Naik_3.pdf'
-                                download
-                                className='py-4 btn-tweet hover:scale-105 bg-[#FFFFFF] shadow-[inset_0_-4px_0_0_rgba(0,0,0,.25)]  btn-lg  transition-all duration-300 ease-out'>
-                                Resume
-                            </a>
-                        </div>
+                            <div
+                                {...animationProps}
+                                className='flex max-w-max gap-6 flex-wrap items-center justify-center mb-12 mx-auto lg:mx-0'>
+                                <Link
+                                    href='contact'
+                                    to='contact'
+                                    offset={-28}
+                                    smooth={true}
+                                    spy={true}>
+                                    <button className='btn-tweet hover:scale-105 bg-[#FFFFFF] shadow-[inset_0_-4px_0_0_rgba(0,0,0,.25)]  btn-lg  transition-all duration-300 ease-out'>
+                                        Contact me
+                                    </button>
+                                </Link>
+                                <a
+                                    href='/Vedant_Naik_3.pdf'
+                                    download
+                                    className='py-4 btn-tweet hover:scale-105 bg-[#FFFFFF] shadow-[inset_0_-4px_0_0_rgba(0,0,0,.25)]  btn-lg  transition-all duration-300 ease-out'>
+                                    Resume
+                                </a>
+                            </div>
                     </div>
                 </div>
             </div>
@@ -66,4 +66,4 @@ const Banner = () => {
     );
 };
 
-export default Banner;
+export default Hero;
