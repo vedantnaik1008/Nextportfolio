@@ -39,26 +39,26 @@ const Hero = () => {
                             skills. If you are interested in my skills, please
                             contact me or message me on Twitter.
                         </p>
-                            <div
-                                {...animationProps}
-                                className='flex max-w-max gap-6 flex-wrap items-center justify-center mb-12 mx-auto lg:mx-0'>
-                                <Link
-                                    href='contact'
-                                    to='contact'
-                                    offset={-28}
-                                    smooth={true}
-                                    spy={true}>
-                                    <button className='btn-tweet hover:scale-105 bg-[#FFFFFF] shadow-[inset_0_-4px_0_0_rgba(0,0,0,.25)]  btn-lg  transition-all duration-300 ease-out'>
-                                        Contact me
-                                    </button>
-                                </Link>
-                                <a
-                                    href='/Vedant_Naik.pdf'
-                                    download
-                                    className='py-4 btn-tweet hover:scale-105 bg-[#FFFFFF] shadow-[inset_0_-4px_0_0_rgba(0,0,0,.25)]  btn-lg  transition-all duration-300 ease-out'>
-                                    Resume
-                                </a>
-                            </div>
+                        <div
+                            {...animationProps}
+                            className='flex max-w-max gap-6 flex-wrap items-center justify-center mb-12 mx-auto lg:mx-0'>
+                            <Link
+                                href='work'
+                                to='work'
+                                smooth={true}
+                                spy={true}
+                                offset={20}>
+                                <button className='btn-tweet hover:scale-105 bg-[#FFFFFF] shadow-[inset_0_-4px_0_0_rgba(0,0,0,.25)]  btn-lg  transition-all duration-300 ease-out'>
+                                    Projects
+                                </button>
+                            </Link>
+                            <a
+                                href='/Vedant_Naik.pdf'
+                                download
+                                className='py-4 rounded-full  text-white font-semibold hover:scale-105 shadow-[inset_0_-4px_0_0_rgba(0,0,0,.25)]  btn-lg  transition-all duration-300 ease-out border-2 border-white'>
+                                Resume
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -9,7 +9,7 @@ import Footer from '@/Components/Footer';
 
 export default function Home() {
     return (
-        <main className='bg-[#131313]  overflow-hidden'>
+        <main className='bg-[#131313] overflow-hidden'>
             <Header />
             <Hero />
             <Skills />
