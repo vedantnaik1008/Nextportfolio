@@ -18,8 +18,6 @@ const About = () => {
     return (
         <section className='py-24 ' id='about'>
             <div className='w-[90%] mx-auto relative'>
-                {/* <div
-                    className='md:bg-[radial-gradient(circle,_rgba(2,0,36,1)_0%,_rgba(255,4,199,1)_25%,_transparent_50%)] absolute top-1/2 left-1/2 z-[1] w-[80%] h-[80%] -translate-x-1/2 -translate-y-1/2'></div> */}
                 <h2 className='h2 leading-tight text-center text-white'>
                     About me
                 </h2>
@@ -47,6 +45,7 @@ const About = () => {
                             <br />I have only completed my higher secondary
                             education
                             <br />I am from Goa, India
+                            <br /> Email: vedunaik777@gmail.com
                         </p>
                     </div>
 
