@@ -3,6 +3,7 @@ import Images from '../images/IMG20231130114037-removebg.webp';
 import { animationProps } from '../variants';
 import { Link } from 'react-scroll';
 import Image from 'next/image';
+import { TextGenerateEffect } from './ui/text-generate-effect';
 
 const Hero = () => {
     return (
@@ -32,13 +33,11 @@ const Hero = () => {
                             Hi there, welcome
                         </h1>
 
-                        <p
-                            {...animationProps}
+                        <div
+                            
                             className='my-8 max-w-lg mx-auto lg:mx-[0px] text-white font-medium'>
-                            I am a frontend developer with no degree, but I have
-                            skills. If you are interested in my skills, please
-                            contact me or message me on Twitter.
-                        </p>
+                                <TextGenerateEffect words={'I am a frontend developer with no degree, but I have skills. If you are interested in my skills, please contact me or message me on Twitter.'} />
+                        </div>
                         <div
                             {...animationProps}
                             className='flex max-w-max gap-6 flex-wrap items-center justify-center mb-12 mx-auto lg:mx-0'>
