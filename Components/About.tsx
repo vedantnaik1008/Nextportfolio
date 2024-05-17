@@ -3,6 +3,14 @@ import { motion } from 'framer-motion';
 import { animationProps } from '../variants';
 import img from '../images/10-Skill-yang-Harus-Dimiliki-Front-End-Developer.webp';
 import Image from 'next/image';
+import { Dancing_Script } from 'next/font/google';
+
+export const dancingScript = Dancing_Script({
+    subsets: ['latin'],
+    display: 'swap',
+    variable: '--font-family',
+    weight: '700'
+})
 
 const About = () => {
     const birthdate = new Date('2002-01-25');
@@ -12,7 +20,7 @@ const About = () => {
     return (
         <section className='py-24 ' id='about'>
             <div className='w-[90%] mx-auto relative'>
-                <h2 className='h2 leading-tight text-center text-white'>
+                <h2 className={`${dancingScript.className} h2 leading-tight text-center text-clip text-transparent bg-clip-text bg-gradient-to-r from-[#ff4d4d] to-[#f9cb28]`}>
                     About me
                 </h2>
                 <motion.div
@@ -43,9 +51,7 @@ const About = () => {
                         </p>
                     </div>
 
-                    <div
-                        className='bg-[#131313]  border-2 border-[#5a5a5a] rounded-2xl p-4   w-full h-full place-content-center'
-                        >
+                    <div className='bg-[#131313]  border-2 border-[#5a5a5a] rounded-2xl p-4   w-full h-full place-content-center'>
                         <div className='text-[50px] font-tertiary text-white text-center mb-2'>
                             2
                         </div>
@@ -58,9 +64,7 @@ const About = () => {
                         </div>
                     </div>
 
-                    <div
-                        className='bg-[#131313]  border-2 border-[#5a5a5a] rounded-2xl p-4   w-full h-full  place-content-center'
-                        >
+                    <div className='bg-[#131313]  border-2 border-[#5a5a5a] rounded-2xl p-4   w-full h-full  place-content-center'>
                         <div className='text-[50px] font-tertiary text-center text-white mb-2'>
                             1
                         </div>
@@ -72,9 +76,7 @@ const About = () => {
                         </div>
                     </div>
 
-                    <div
-                        className='bg-[#131313]  border-2 border-[#5a5a5a] rounded-2xl p-4   w-full h-full  place-content-center'
-                        >
+                    <div className='bg-[#131313]  border-2 border-[#5a5a5a] rounded-2xl p-4   w-full h-full  place-content-center'>
                         <div className='text-[50px] font-tertiary text-center text-white mb-2'>
                             50
                             <span className='text-[40px]'>+</span>

@@ -4,12 +4,13 @@ import { animationProps } from '../variants';
 import Image from 'next/image';
 import apolloClient from '@/public/assets/17189275.png'
 import vercel from '@/public/assets/0_BV1dRBYoYd9jKYW8.png';
+import { dancingScript } from './About';
 
 const Skills = () => {
     return (
         <section className='section' id='skills'>
             <motion.div className='w-[95%] mx-auto' {...animationProps}>
-                <h2 className='h2 leading-tight text-center text-white'>
+                <h2 className={`${dancingScript.className} h2 leading-tight text-center text-clip text-transparent bg-clip-text bg-gradient-to-r from-[#019ae9] to-[#00dfd8]`}>
                     My Skills
                 </h2>
                 {/* <div className='grid xs:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xs:gap-[30px] lg:gap-[20px] xl:gap-[30px] mt-[50px]'>
@@ -431,7 +432,7 @@ const Skills = () => {
                         </div>
                     </div>
 
-                    <div className='mb-4 mt-[54px'>
+                    <div className='my-4 mt-[54px]'>
                         <h3 className='h3 leading-tight text-center text-white mb-8'>
                             Tools
                         </h3>
