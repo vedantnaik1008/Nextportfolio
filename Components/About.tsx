@@ -1,16 +1,10 @@
 'use client';
-import Countup from 'react-countup';
 import { motion } from 'framer-motion';
 import { animationProps } from '../variants';
 import img from '../images/10-Skill-yang-Harus-Dimiliki-Front-End-Developer.webp';
 import Image from 'next/image';
-import { useInView } from 'react-intersection-observer';
 
 const About = () => {
-    const [ref, inView] = useInView({
-        threshold: 0.5
-    });
-
     const birthdate = new Date('2002-01-25');
     const currentDate = new Date();
     const age = currentDate.getFullYear() - birthdate.getFullYear();
@@ -51,11 +45,9 @@ const About = () => {
 
                     <div
                         className='bg-[#131313]  border-2 border-[#5a5a5a] rounded-2xl p-4   w-full h-full place-content-center'
-                        ref={ref}>
+                        >
                         <div className='text-[50px] font-tertiary text-white text-center mb-2'>
-                            {inView ? (
-                                <Countup start={0} end={2} duration={3} />
-                            ) : null}
+                            2
                         </div>
 
                         <div className='font-primary text-lg tracking-[2px] text-center text-white'>
@@ -68,11 +60,9 @@ const About = () => {
 
                     <div
                         className='bg-[#131313]  border-2 border-[#5a5a5a] rounded-2xl p-4   w-full h-full  place-content-center'
-                        ref={ref}>
+                        >
                         <div className='text-[50px] font-tertiary text-center text-white mb-2'>
-                            {inView ? (
-                                <Countup start={0} end={1} duration={3} />
-                            ) : null}
+                            1
                         </div>
                         <div className='font-primary text-lg tracking-[2px] text-center text-white'>
                             Years of <br />
@@ -84,11 +74,9 @@ const About = () => {
 
                     <div
                         className='bg-[#131313]  border-2 border-[#5a5a5a] rounded-2xl p-4   w-full h-full  place-content-center'
-                        ref={ref}>
+                        >
                         <div className='text-[50px] font-tertiary text-center text-white mb-2'>
-                            {inView ? (
-                                <Countup start={0} end={50} duration={3} />
-                            ) : null}
+                            50
                             <span className='text-[40px]'>+</span>
                         </div>
                         <div className='font-primary text-lg tracking-[2px] text-center text-white'>
