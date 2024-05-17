@@ -4,12 +4,14 @@ import { animationProps } from '../variants';
 import { Link } from 'react-scroll';
 import Image from 'next/image';
 import { TextGenerateEffect } from './ui/text-generate-effect';
+import { Spotlight } from './ui/Spotlight';
 
 const Hero = () => {
     return (
         <section
-            className='min-h-[85vh] md:min-h-[75vh] flex items-center mt-28 container-1'
+            className='min-h-[85vh] md:min-h-[75vh] flex items-center mt-28 container-1 relative'
             id='home'>
+                <Spotlight />
             <div className='container mx-auto'>
                 <div className='flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12'>
                     <div
@@ -33,10 +35,12 @@ const Hero = () => {
                             Hi there, welcome
                         </h1>
 
-                        <div
-                            
-                            className='my-8 max-w-lg mx-auto lg:mx-[0px] text-white font-medium'>
-                                <TextGenerateEffect words={'I am a frontend developer with no degree, but I have skills. If you are interested in my skills, please contact me or message me on Twitter.'} />
+                        <div className='my-8 max-w-lg mx-auto lg:mx-[0px] text-white font-medium'>
+                            <TextGenerateEffect
+                                words={
+                                    'I am a frontend developer with no degree, but I have skills. If you are interested in my skills, please contact me or message me on Twitter.'
+                                }
+                            />
                         </div>
                         <div
                             {...animationProps}
