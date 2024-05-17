@@ -19,7 +19,7 @@ const Work = () => {
                     </h2>
                     <motion.div
                         {...animationProps}
-                        className='grid grid-cols-1 lg:grid-cols-2 gap-3'>
+                        className='grid grid-cols-1 lg:grid-cols-2 gap-x-5'>
                         {projectData.map((project) => (
                             <CardContainer key={project.id}>
                                 <div
