@@ -1,11 +1,6 @@
 'use client';
 import dynamic from 'next/dynamic';
 import { useState } from 'react';
-import { motion } from 'framer-motion';
-import { animationProps } from '../variants';
-import Image from 'next/image';
-import { projectData } from '@/data/ProjectData';
-import { CardContainer } from './ui/3d-card';
 import { dancingScript } from './About';
 
 const Modal = dynamic(()=>import('./Modal'),{ ssr: false });
@@ -19,9 +14,9 @@ const Work = () => {
                     <h2 className={`${dancingScript.className} h2 leading-tight text-center text-clip text-transparent bg-clip-text bg-gradient-to-r from-[#7928ca] to-[#ff0080] mt-6`}>
                         My Latest Projects
                     </h2>
-                    <motion.div
+                    {/* <motion.div
                         {...animationProps}
-                        className='grid grid-cols-1 lg:grid-cols-2 gap-x-5'>
+                        className='grid grid-cols-1 lg:grid-cols-2 gap-x-5 hidden'>
                         {projectData.map((project) => (
                             <CardContainer key={project.id}>
                                 <div
@@ -47,7 +42,7 @@ const Work = () => {
                                 </div>
                             </CardContainer>
                         ))}
-                    </motion.div>
+                    </motion.div> */}
                 </div>
                 <Modal isClicked={isClicked} setIsClicked={setIsClicked} />
             </section>

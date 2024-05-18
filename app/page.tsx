@@ -6,6 +6,7 @@ import Header from '@/Components/Header';
 import Skills from '@/Components/Skills';
 import Work from '@/Components/Work'
 import Footer from '@/Components/Footer';
+import ImageSlider from '@/Components/imageSlider';
 
 export default function Home() {
     return (
@@ -15,6 +16,7 @@ export default function Home() {
             <Skills />
             <About />
             <Work />
+            <ImageSlider />
             <Contact />
             <Footer />
         </main>
