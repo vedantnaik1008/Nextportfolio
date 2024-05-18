@@ -17,7 +17,7 @@ const Contact = () => {
     } = useForm();
 
     return (
-        <section className='py-16 mt-28 lg:section' id='contact'>
+        <section className='py-24 lg:section' id='contact'>
             <div className='w-[90%] mx-auto'>
                 <div className='flex flex-col lg:flex-row'>
                     <motion.div
