@@ -3,12 +3,15 @@ import Images from '../images/IMG20231130114037-removebg.webp';
 import { animationProps } from '../variants';
 import { Link } from 'react-scroll';
 import Image from 'next/image';
+import { TextGenerateEffect } from './ui/text-generate-effect';
+import { Spotlight } from './ui/Spotlight';
 
 const Hero = () => {
     return (
         <section
-            className='min-h-[85vh] md:min-h-[75vh] flex items-center mt-28 container-1'
+            className='min-h-[85vh] md:min-h-[75vh] flex items-center mt-28 container-1 relative'
             id='home'>
+            <Spotlight />
             <div className='container mx-auto'>
                 <div className='flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12'>
                     <div
@@ -32,33 +35,33 @@ const Hero = () => {
                             Hi there, welcome
                         </h1>
 
-                        <p
+                        <div className='my-8 max-w-lg mx-auto lg:mx-[0px] text-white font-medium'>
+                            <TextGenerateEffect
+                                words={
+                                    'I am a frontend developer with no degree, but I have skills. If you are interested in my skills, please contact me or message me on Twitter.'
+                                }
+                            />
+                        </div>
+                        <div
                             {...animationProps}
-                            className='my-8 max-w-lg mx-auto lg:mx-[0px] text-white font-medium'>
-                            I am a frontend developer with no degree, but I have
-                            skills. If you are interested in my skills, please
-                            contact me or message me on Twitter.
-                        </p>
-                            <div
-                                {...animationProps}
-                                className='flex max-w-max gap-6 flex-wrap items-center justify-center mb-12 mx-auto lg:mx-0'>
-                                <Link
-                                    href='contact'
-                                    to='contact'
-                                    offset={-28}
-                                    smooth={true}
-                                    spy={true}>
-                                    <button className='btn-tweet hover:scale-105 bg-[#FFFFFF] shadow-[inset_0_-4px_0_0_rgba(0,0,0,.25)]  btn-lg  transition-all duration-300 ease-out'>
-                                        Contact me
-                                    </button>
-                                </Link>
-                                <a
-                                    href='/Vedant_Naik.pdf'
-                                    download
-                                    className='py-4 btn-tweet hover:scale-105 bg-[#FFFFFF] shadow-[inset_0_-4px_0_0_rgba(0,0,0,.25)]  btn-lg  transition-all duration-300 ease-out'>
-                                    Resume
-                                </a>
-                            </div>
+                            className='flex max-w-max gap-6 flex-wrap items-center justify-center mb-12 mx-auto lg:mx-0'>
+                            <Link
+                                href='work'
+                                to='work'
+                                smooth={true}
+                                spy={true}
+                                offset={20}>
+                                <button className='btn-tweet hover:scale-105 bg-[#FFFFFF] shadow-[inset_0_-4px_0_0_rgba(0,0,0,.25)]  btn-lg  transition-all duration-300 ease-out'>
+                                    Projects
+                                </button>
+                            </Link>
+                            <a
+                                href='/Vedant_Naik.pdf'
+                                download
+                                className='py-4 rounded-full  text-white font-semibold hover:scale-105 shadow-[inset_0_-4px_0_0_rgba(0,0,0,.25)]  btn-lg  transition-all duration-300 ease-out border-2 border-white'>
+                                Resume
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
