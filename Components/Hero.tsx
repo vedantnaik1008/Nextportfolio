@@ -4,7 +4,7 @@ import { animationProps } from '../variants';
 import { Link } from 'react-scroll';
 import Image from 'next/image';
 import { TextGenerateEffect } from './ui/text-generate-effect';
-import { Spotlight } from './ui/Spotlight';
+import { Spotlight } from '@/Components/ui/Spotlight';
 
 const Hero = () => {
     return (
