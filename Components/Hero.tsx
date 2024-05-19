@@ -10,7 +10,7 @@ const Hero = () => {
     return (
         <section
             className='min-h-[85vh] md:min-h-[75vh] flex items-center mt-28 container-1 relative'
-            id='home'>
+            id='home' data-testid='home'>
             <Spotlight />
             <div className='container mx-auto'>
                 <div className='flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12'>
