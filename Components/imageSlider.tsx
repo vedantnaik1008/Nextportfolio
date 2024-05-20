@@ -1,35 +1,31 @@
 import { useEffect, useState } from 'react';
-// import image1 from '../assets/photo-1542396601-dca920ea2807.avif';
-// import image2 from '../assets/photo-1542397284385-6010376c5337.avif';
-// import image3 from '../assets/photo-1542401886-65d6c61db217.avif';
 import { motion } from 'framer-motion';
 import { animationProps } from '../variants';
 import Image from 'next/image';
 import { projectData } from '@/data/ProjectData';
 import { CardContainer } from './ui/3d-card';
 
-// const Images = [{ src: image1 }, { src: image2 }, { src: image3 }];
 
 type Props = {
-    components: [],
+    setIsClicked: (isClicked: string) => void
 }
 
-const ImageSlider = () => {
+const ImageSlider = ({ setIsClicked }: Props) => {
     const [currentImage, setCurrentImage] = useState(0);
     const [isInteracting, setIsInteracting] = useState(false);
 
-    // useEffect(() => {
-    //     let interval: string | number | NodeJS.Timeout | undefined;
-    //     if (!isInteracting) {
-    //         interval = setInterval(() => {
-    //             setCurrentImage((prev) =>
-    //                 prev < projectData.length - 1 ? prev + 1 : 0
-    //             );
-    //         }, 3000);
-    //     }
+    useEffect(() => {
+        let interval: string | number | NodeJS.Timeout | undefined;
+        if (!isInteracting) {
+            interval = setInterval(() => {
+                setCurrentImage((prev) =>
+                    prev < projectData.length - 1 ? prev + 1 : 0
+                );
+            }, 3000);
+        }
 
-    //     return () => clearInterval(interval);
-    // }, [isInteracting]);
+        return () => clearInterval(interval);
+    }, [isInteracting]);
     const Previous = () => {
         setIsInteracting(true);
         setCurrentImage(
@@ -44,7 +40,7 @@ const ImageSlider = () => {
         );
     };
 
-    const handleClick = (index : number) => {
+    const handleClick = (index: number) => {
         setIsInteracting(true);
         setCurrentImage(index);
     };
@@ -60,8 +56,12 @@ const ImageSlider = () => {
     return (
         <>
             <div className=''>
-                <motion.div {...animationProps} className='flex items-center justify-center relative'>
-                    <button onClick={Previous} className='Previous'>
+                <motion.div
+                    {...animationProps}
+                    className='flex items-center justify-center relative'>
+                    <button
+                        onClick={Previous}
+                        className='Previous left-0 md:left-[8%] lgmd:left-[10%]'>
                         {'<'}
                     </button>
                     {projectData.map((project, i) => (
@@ -69,8 +69,8 @@ const ImageSlider = () => {
                             key={project.id}
                             className={`${
                                 currentImage === i
-                                    ? 'xs:block SlideTrue'
-                                    : 'xs:hidden SlideFalse'
+                                    ? 'block SlideTrue'
+                                    : ` SlideFalse image-${i}`
                             }`}>
                             <CardContainer>
                                 <div
@@ -86,23 +86,26 @@ const ImageSlider = () => {
                                         src={project.image}
                                         alt='project-img'
                                     />
-                                    {/* <div className='absolute -top-[50%] left-[40%] md:left-[45%] group-hover:top-[50%] transition-all duration-500 z-40'>
+                                    <div className='absolute -top-[50%] left-[40%] md:left-[45%] group-hover:top-[50%] transition-all duration-500 z-40'>
                                         <span
-                                            // onClick={() => setIsClicked(project.id)}
+                                            onClick={() =>
+                                                setIsClicked(project.id)
+                                            }
                                             className='text-3xl text-white text-gradient'>
-                                            Click
                                         </span>
-                                    </div> */}
+                                    </div>
                                 </div>
                             </CardContainer>
                         </div>
                     ))}
-                    <button onClick={Next} className='Next'>
+                    <button
+                        onClick={Next}
+                        className='Next right-0 md:right-[8%] lgmd:right-[10%]'>
                         {'>'}
                     </button>
                 </motion.div>
             </div>
-            <div className='dots md:mt-[30px] lg:mt-[40px] xl:mt-[60px]'>
+            <div className='dots mt-[30px] lg:mt-[40px] xl:mt-[60px]'>
                 {projectData.map((_, i) => (
                     <span
                         key={i}
