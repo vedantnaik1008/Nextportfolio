@@ -69,13 +69,13 @@ const ImageSlider = ({ setIsClicked }: Props) => {
                             key={project.id}
                             className={`${
                                 currentImage === i
-                                    ? 'block SlideTrue'
-                                    : ` SlideFalse image-${i}`
+                                    ? 'block SlideTrue opacity-100'
+                                    : ` SlideFalse image-${i} opacity-70`
                             }`}>
                             <CardContainer>
                                 <div
                                     className='group relative overflow-hidden border-[2px] border-[#5a5a5a] rounded-xl mt-6'
-                                    // onClick={() => setIsClicked(project.id)}
+                                    onClick={() => setIsClicked(project.id)}
                                     onMouseEnter={handleMouseEnter}
                                     onMouseLeave={handleMouseLeave}>
                                     <Image
@@ -91,7 +91,8 @@ const ImageSlider = ({ setIsClicked }: Props) => {
                                             onClick={() =>
                                                 setIsClicked(project.id)
                                             }
-                                            className='text-3xl text-white text-gradient'>
+                                            className='text-3xl text-white text-gradient cursor-pointer'>
+                                                click
                                         </span>
                                     </div>
                                 </div>
