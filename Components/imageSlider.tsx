@@ -60,7 +60,7 @@ const ImageSlider = ({ setIsClicked }: Props) => {
                     className='flex items-center justify-center relative'>
                     <button
                         onClick={Previous}
-                        className='Previous left-0 md:left-[8%] lgmd:left-[10%]'>
+                        className='Previous top-[103%] left-[20%] sm:left-[30%] md:top-1/2 md:left-[8%] lgmd:left-[10%]'>
                         {'<'}
                     </button>
                     {projectData.map((project, i) => (
@@ -69,7 +69,7 @@ const ImageSlider = ({ setIsClicked }: Props) => {
                             className={`${
                                 currentImage === i
                                     ? 'block SlideTrue'
-                                    : ` SlideFalse image-${i}`
+                                    : `SlideFalse image-${i}`
                             }`}>
                             <CardContainer>
                                 <div
@@ -100,7 +100,7 @@ const ImageSlider = ({ setIsClicked }: Props) => {
                     ))}
                     <button
                         onClick={Next}
-                        className='Next right-0 md:right-[8%] lgmd:right-[10%]'>
+                        className='Next top-[103%] right-[20%] sm:right-[30%] md:top-1/2 md:right-[8%] lgmd:right-[10%]'>
                         {'>'}
                     </button>
                 </motion.div>
