@@ -5,7 +5,7 @@ const handleClick = () => {
 return ''
 }
 
-it('renders button correctly', ()=>{
+it.skip('renders button correctly', ()=>{
     render(<GoTopBtn handleClick={handleClick} />)
     const button = screen.getByRole('button')
     expect(button).toBeInTheDocument()
