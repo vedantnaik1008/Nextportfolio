@@ -43,13 +43,16 @@ const About = () => {
                         <h3 className='h3 lg:text-[35px] mb-4 text-white'>
                             I&apos;m Self taught frontend developer
                         </h3>
-                        <p className='mb-6 text-white font-medium'>
-                            My name is vedant naik <br />I am {age} years old{' '}
-                            <br />I have only completed my higher secondary
-                            education
-                            <br />I am from Goa, India
-                            <br /> Email: vedunaik777@gmail.com
-                        </p>
+                        <div className='mb-6 text-white font-medium'>
+                            <p className=''>My name is vedant naik</p>
+                            <p className=''>I am {age} years old</p>
+                            <p className=''>
+                                I have only completed my higher secondary
+                                education
+                            </p>
+                            <p className="">I am from Goa, India</p>
+                            <p className="">Email: vedunaik777@gmail.com</p>
+                        </div>
                     </div>
 
                     <div className='bg-[#131313]  border-2 border-[#5a5a5a] rounded-2xl p-4   w-full h-full place-content-center'>
