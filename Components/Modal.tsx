@@ -3,12 +3,12 @@ import React from 'react';
 import ReactPlayer from 'react-player';
 import LoadingSpinner from './LoadingSpinner';
 
-type Props = {
+export type modalProps = {
     isClicked: string;
     setIsClicked: (isClicked: string) => void;
 };
 
-const Modal = ({ isClicked, setIsClicked }: Props) => {
+const Modal = ({ isClicked, setIsClicked }: modalProps) => {
     return (
         <>
             {isClicked &&
@@ -17,10 +17,12 @@ const Modal = ({ isClicked, setIsClicked }: Props) => {
                         Modal.id === isClicked && (
                             <div
                                 key={Modal.id}
+                                data-testid="modal"
                                 className='fixed inset-0 z-50 bg-transparent backdrop-blur-3xl h-[100%] w-[100%] text-white m-auto flex items-center'>
                                 <div className='relative border-[#5a5a5a] border-[2px] bg-[#181818] min-[320px]:w-[90%] min-[500px]:w-[75%]  md:h-[70%] md:w-[75%] text-white mx-auto rounded-lg p-4'>
                                     <button
                                         onClick={() => setIsClicked('')}
+                                        data-testid='close'
                                         className=' drop-shadow-2xl border-[#5a5a5a] border-[2px] rounded-full w-[40px] h-[40px] bg-[#181818] text-xl absolute min-[320px]:right-[40%]  min-[320px]:-top-12 min-[500px]:-right-12 min-[500px]:-top-4 md:-right-20 md:-top-10 flex items-center justify-center'>
                                         <svg
                                             stroke='currentColor'
