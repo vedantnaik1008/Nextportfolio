@@ -24,7 +24,7 @@ export const fadeIn = (direction:'up' | 'down' | 'left' | 'right' , delay: numbe
  
 
 
- export const animationProps =  {
+ export const animationProps  =  {
       variants: fadeIn('up', 0.3),
       initial: 'hidden',
       whileInView: 'show',
