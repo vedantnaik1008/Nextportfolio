@@ -6,7 +6,7 @@ export const socials = [
             <svg
                 stroke='currentColor'
                 fill='currentColor'
-                stroke-width='0'
+                strokeWidth='0'
                 viewBox='0 0 448 512'
                 className='h-5 w-5'
                 xmlns='http://www.w3.org/2000/svg'>
@@ -36,7 +36,7 @@ export const socials = [
             <svg
                 stroke='currentColor'
                 fill='currentColor'
-                stroke-width='0'
+                strokeWidth='0'
                 viewBox='0 0 496 512'
                 className='h-5 w-5'
                 xmlns='http://www.w3.org/2000/svg'>
