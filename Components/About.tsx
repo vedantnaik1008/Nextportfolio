@@ -20,15 +20,15 @@ const About = () => {
 
     return (
         <section className='py-24 ' id='about'>
-            <div className='w-[90%] mx-auto relative lg:w-[70%]'>
+            <div className='w-[90%] mx-auto relative xl:w-[70%]'>
                 <h2
                     className={`${dancingScript.className} h2 leading-tight text-center text-clip text-transparent bg-clip-text bg-gradient-to-r from-[#ff4d4d] to-[#f9cb28]`}>
                     About me
                 </h2>
                 <motion.div
                     {...animationProps}
-                    className='grid gap-4 grid-cols-1 md:grid-cols-3 md:grid-rows-3 md:gap-10 relative z-[2]'>
-                    <div className='bg-gradient-to-r from-[#019ae9] to-[#00dfd8] hover:bg-gradient-to-l from-[#019ae9] to-[#00dfd8] transition-all ease-in-out duration-300 md:col-span-1 md:row-span-2 border-2 border-[#5a5a5a] rounded-2xl overflow-hidden'>
+                    className='grid gap-4 grid-cols-1  md:grid-cols-3 md:grid-rows-2 xl:grid-rows-3 md:gap-4 lg:gap-6 xl:gap-10 relative z-[2]'>
+                    <div className='bg-gradient-to-r from-[#019ae9] to-[#00dfd8] hover:bg-gradient-to-l  transition-all ease-in-out duration-300 md:col-span-1 lg:row-span-1 xl:row-span-2 border-2 border-[#5a5a5a] rounded-2xl overflow-hidden p-4 xl:p-0'>
                         <div className='flex flex-col justify-center items-center w-40 h-full mx-auto text-center'>
                             <Image
                                 width={100}
@@ -58,7 +58,7 @@ const About = () => {
                         </div>
                     </div>
 
-                    <div className='bg-gradient-to-r from-[#7928ca] to-[#ff0080] hover:bg-gradient-to-l from-[#7928ca] to-[#ff0080] transition-all ease-in-out duration-300 md:col-span-2 w-full border-2 border-[#5a5a5a] rounded-2xl p-4  '>
+                    <div className='bg-gradient-to-r from-[#7928ca] to-[#ff0080] hover:bg-gradient-to-l transition-all ease-in-out duration-300 md:col-span-2  w-full border-2 border-[#5a5a5a] rounded-2xl p-4  '>
                         <h3 className='h3 lg:text-[35px] mb-4 text-white'>
                             I&apos;m Self taught frontend developer
                         </h3>
@@ -71,7 +71,7 @@ const About = () => {
                         </p>
                     </div>
 
-                    <div className='bg-gradient-to-r from-[#ff4d4d] to-[#f9cb28] hover:bg-gradient-to-l from-[#ff4d4d] to-[#f9cb28] transition-all ease-in-out duration-300  border-2 border-[#5a5a5a] rounded-2xl p-4   w-full h-full place-content-center'>
+                    <div className='bg-gradient-to-r from-[#ff4d4d] to-[#f9cb28] hover:bg-gradient-to-l  transition-all ease-in-out duration-300  border-2 border-[#5a5a5a] rounded-2xl p-4   w-full h-full place-content-center'>
                         <div className='text-[50px] font-tertiary text-white text-center mb-2'>
                             2
                         </div>
@@ -84,7 +84,7 @@ const About = () => {
                         </div>
                     </div>
 
-                    <div className='bg-gradient-to-r from-[#019ae9] to-[#00dfd8] hover:bg-gradient-to-l from-[#019ae9] to-[#00dfd8] transition-all ease-in-out duration-300 md:row-span-2 border-2 border-[#5a5a5a] rounded-2xl p-4   w-full h-full  place-content-center'>
+                    <div className='bg-gradient-to-r from-[#019ae9] to-[#00dfd8] hover:bg-gradient-to-l  transition-all ease-in-out duration-300 md:row-span-1 xl:row-span-2 border-2 border-[#5a5a5a] rounded-2xl p-4   w-full h-full  place-content-center'>
                         <div className='text-[50px] font-tertiary text-center text-white mb-2'>
                             1
                         </div>
@@ -96,7 +96,7 @@ const About = () => {
                         </div>
                     </div>
 
-                    <div className='bg-gradient-to-r from-[#7928ca] to-[#ff0080] hover:bg-gradient-to-l from-[#7928ca] to-[#ff0080] transition-all ease-in-out duration-300 md:col-span-2  border-2 border-[#5a5a5a] rounded-2xl p-4   w-full h-full  place-content-center'>
+                    <div className='bg-gradient-to-r from-[#7928ca] to-[#ff0080] hover:bg-gradient-to-l  transition-all ease-in-out duration-300 md:col-span-1 xl:col-span-2  border-2 border-[#5a5a5a] rounded-2xl p-4   w-full h-full  place-content-center'>
                         <div className='text-[50px] font-tertiary text-center text-white mb-2'>
                             50
                             <span className='text-[40px]'>+</span>

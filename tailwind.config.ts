@@ -19,7 +19,8 @@ const config: Config = {
             mdlg: '959px',
             lg: '960px',
             lgmd: '1024px',
-            xl: '1200px'
+            xl: '1200px',
+            xxl: '1400px'
         },
         extend: {
             colors: {
