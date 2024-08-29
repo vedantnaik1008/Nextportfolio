@@ -13,18 +13,18 @@ const ImageSlider = ({ setIsClicked }: Props) => {
     const [currentImage, setCurrentImage] = useState(0);
     const [isInteracting, setIsInteracting] = useState(false);
 
-    useEffect(() => {
-        let interval: string | number | NodeJS.Timeout | undefined;
-        if (!isInteracting) {
-            interval = setInterval(() => {
-                setCurrentImage((prev) =>
-                    prev < projectData.length - 1 ? prev + 1 : 0
-                );
-            }, 3000);
-        }
+    // useEffect(() => {
+    //     let interval: string | number | NodeJS.Timeout | undefined;
+    //     if (!isInteracting) {
+    //         interval = setInterval(() => {
+    //             setCurrentImage((prev) =>
+    //                 prev < projectData.length - 1 ? prev + 1 : 0
+    //             );
+    //         }, 3000);
+    //     }
 
-        return () => clearInterval(interval);
-    }, [isInteracting]);
+    //     return () => clearInterval(interval);
+    // }, [isInteracting]);
     const Previous = () => {
         setIsInteracting(true);
         setCurrentImage(
@@ -57,7 +57,7 @@ const ImageSlider = ({ setIsClicked }: Props) => {
             <div className=''>
                 <motion.div
                     {...animationProps}
-                    className='flex items-center justify-center relative'>
+                    className='md:flex items-center justify-center relative'>
                     <button
                         onClick={Previous}
                         className='Previous top-[103%] left-[20%] sm:left-[30%] md:top-1/2 md:left-[8%] lgmd:left-[10%]'>
