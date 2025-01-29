@@ -11,9 +11,9 @@ const Hero = () => {
         <section
             className='min-h-[85vh] md:min-h-[75vh] flex items-center mt-28 container-1 relative'
             id='home'>
-                <Spotlight />
+            <Spotlight />
             <div className='container mx-auto'>
-                <div className='flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12'>
+                <div className='flex md:flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12'>
                     <div
                         {...animationProps}
                         className='self-center sm:order-first lg:order-last'>
@@ -25,14 +25,14 @@ const Hero = () => {
                             sizes='(min-width: 640px) 400px, (min-width: 380px) 290px, calc(33.33vw + 170px)'
                             src={Images}
                             alt='person-img'
-                            className='rounded-xl bg-cover'
+                            className='rounded-xl bg-cover hidden md:block'
                         />
                     </div>
                     <div className='flex-1 text-center font-secondary  lg:text-left'>
                         <h1
                             {...animationProps}
-                            className='text-[55px]  lg:max-w-[600px]  text-white font-bold leading-[0.8] lg:text-[110px] mt-8'>
-                            Hi there, welcome
+                            className='text-[55px]  lg:max-w-[600px]  text-white font-bold leading-[0.8] lg:text-[110px] md:mt-8'>
+                            <TextGenerateEffect words={'Hi there, welcome'} />
                         </h1>
 
                         <div className='my-8 max-w-lg mx-auto lg:mx-[0px] text-white font-medium'>
@@ -56,7 +56,7 @@ const Hero = () => {
                                 </button>
                             </Link>
                             <a
-                                href='/Vedant_Naik.pdf'
+                                href='/Vedant_Naik_New_Resume.pdf'
                                 download
                                 className='py-4 rounded-full  text-white font-semibold hover:scale-105 shadow-[inset_0_-4px_0_0_rgba(0,0,0,.25)]  btn-lg  transition-all duration-300 ease-out border-2 border-white'>
                                 Resume

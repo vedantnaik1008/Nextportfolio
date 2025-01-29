@@ -20,6 +20,13 @@ export const NavLinks: Props = {
             offset: -200
         },
         {
+            href: 'experience',
+            to: 'experience',
+            smooth: true,
+            spy: true,
+            offset: -20
+        },
+        {
             href: 'skills',
             to: 'skills',
             smooth: true,

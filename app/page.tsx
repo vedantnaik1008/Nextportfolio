@@ -6,12 +6,14 @@ import Header from '@/Components/Header';
 import Skills from '@/Components/Skills';
 import Work from '@/Components/Work'
 import Footer from '@/Components/Footer';
+import Experience from '@/Components/Experience';
 
 export default function Home() {
     return (
         <main className='bg-[#131313] overflow-hidden'>
             <Header />
             <Hero />
+            <Experience />
             <Skills />
             <About />
             <Work />
