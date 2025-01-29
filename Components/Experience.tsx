@@ -55,6 +55,7 @@ const Experience = () => {
                                         width={100}
                                         src={res.companyLogo}
                                         className='rounded-xl'
+                                        loading='lazy'
                                     />
                                     <figcaption>{res.companyName}</figcaption>
                                     <div className='flex flex-col'>
