@@ -46,13 +46,13 @@ const Hero = () => {
                             {...animationProps}
                             className='flex max-w-max gap-6 flex-wrap items-center justify-center mb-12 mx-auto lg:mx-0'>
                             <Link
-                                href='work'
-                                to='work'
+                                href='experience'
+                                to='experience'
                                 smooth={true}
                                 spy={true}
-                                offset={20}>
+                                offset={3}>
                                 <button className='btn-tweet hover:scale-105 bg-[#FFFFFF] shadow-[inset_0_-4px_0_0_rgba(0,0,0,.25)]  btn-lg  transition-all duration-300 ease-out'>
-                                    Projects
+                                    Experience
                                 </button>
                             </Link>
                             <a

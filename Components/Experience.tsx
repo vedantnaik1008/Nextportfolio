@@ -1,5 +1,6 @@
 import LeanPT from '@/images/leanPTImage.jpg';
 import Image from 'next/image';
+import { dancingScript } from './About';
 
 const experienceData = [
     {
@@ -10,6 +11,7 @@ const experienceData = [
         linkName: 'Khambee',
         date: '3/Nov/2024',
         role: 'Frontend Developer Intern',
+        experience: '2 months',
         project: [
             {
                 id: 1,
@@ -28,7 +30,7 @@ const experienceData = [
                             'The optimization of image handling and display, and the development of a solution for creating multiple themes within the same project, which results in a smaller bundle size and less time spent on theme development.'
                     }
                 ]
-            },
+            }
         ]
     }
 ];
@@ -39,7 +41,7 @@ const Experience = () => {
             <section className='py-24 flex items-center' id='experience'>
                 <div className='w-[95%] md:w-[90%] mx-auto'>
                     <h2
-                        className={` h2 leading-tight text-center text-white mt-6`}>
+                        className={`${dancingScript.className} h2 leading-tight text-center text-clip text-transparent bg-clip-text bg-gradient-to-r from-[#7928ca] to-[#ff0080]`}>
                         Experience
                     </h2>
 
@@ -60,6 +62,9 @@ const Experience = () => {
                                     <figcaption>{res.companyName}</figcaption>
                                     <div className='flex flex-col'>
                                         <span className=''>{res.role}</span>
+                                        <span className=''>
+                                            Work Exp: {res.experience}
+                                        </span>
                                     </div>
                                 </figure>
 
@@ -70,7 +75,8 @@ const Experience = () => {
                                                 key={proj.id}
                                                 className='flex flex-col md:flex-row items-start md:gap-2 md:items-center md:justify-between'>
                                                 <a href={res.link} className=''>
-                                                    {proj.id}{')'} Website:{' '}
+                                                    {proj.id}
+                                                    {')'} Website:{' '}
                                                     <span className='underline'>
                                                         {res.linkName}
                                                     </span>
