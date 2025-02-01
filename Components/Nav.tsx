@@ -64,7 +64,7 @@ const Navbar = ({ show, setShow }: Props) => {
                     <Link
                         href='contact'
                         to='contact'
-                        offset={-28}
+                        offset={30}
                         activeClass='active-on'
                         smooth={true}
                         spy={true}
