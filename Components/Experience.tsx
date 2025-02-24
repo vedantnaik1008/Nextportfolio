@@ -72,7 +72,7 @@ const Experience = () => {
                                     {res.project.map((proj) => (
                                         <>
                                             <div
-                                                key={proj.id}
+                                                key={proj.id + res.id}
                                                 className='flex flex-col md:flex-row items-start md:gap-2 md:items-center md:justify-between'>
                                                 <a href={res.link} className=''>
                                                     {proj.id}

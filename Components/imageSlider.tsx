@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { animationProps } from '../variants';
 import Image from 'next/image';
@@ -54,17 +54,15 @@ const ImageSlider = ({ setIsClicked }: Props) => {
 
     return (
         <>
-            <div className=''>
-                <motion.div
-                    {...animationProps}
-                    className='md:flex items-center justify-center relative'>
+            <div className='relative'>
+                <motion.div {...animationProps} className=''>
                     <button
                         onClick={Previous}
-                        className='Previous top-[103%] left-[20%] sm:left-[30%] md:top-1/2 md:left-[8%] lgmd:left-[10%]'>
+                        className='Previous block md:hidden top-[103%] left-[10%] sm:left-[30%] md:top-1/2 md:left-[8%] lgmd:left-[10%]'>
                         <svg
                             stroke='currentColor'
                             fill='currentColor'
-                            stroke-width='0'
+                            strokeWidth='0'
                             viewBox='0 0 256 512'
                             height='20px'
                             width='20px'
@@ -76,30 +74,33 @@ const ImageSlider = ({ setIsClicked }: Props) => {
                         <div
                             key={project.id}
                             className={`${
-                                currentImage === i
-                                    ? 'block SlideTrue'
-                                    : `SlideFalse image-${i}`
-                            }`}>
+                                currentImage === i ? 'block' : `hidden`
+                            } h-auto`}>
                             <CardContainer>
                                 <div
-                                    className='group relative overflow-hidden border-[2px] border-[#5a5a5a] rounded-xl mt-6'
+                                    className='group relative overflow-hidden border-[2px] border-[#5a5a5a] rounded-xl mt-6 cursor-pointer'
                                     onClick={() => setIsClicked(project.id)}
                                     onMouseEnter={handleMouseEnter}
                                     onMouseLeave={handleMouseLeave}>
                                     <Image
                                         width={576}
-                                        height={400}
+                                        height={450}
                                         sizes='(min-width: 960px) 45vw, 90vw'
-                                        className='group-hover:scale-125 w-[100%] transition-all duration-500 object-cover bg-cover bg-center'
-                                        src={project.image}
+                                        className='group-hover:scale-100 w-[100%] transition-all duration-500 object-cover bg-center md:h-[450px]'
+                                        src={
+                                            currentImage === i
+                                                ? projectData[currentImage]
+                                                      .image
+                                                : projectData[0].image
+                                        }
                                         alt='project-img'
                                     />
-                                    <div className='absolute -top-[50%] left-[40%] md:left-[45%] group-hover:top-[50%] transition-all duration-500 z-40'>
+                                    <div className='absolute -top-[50%] left-[40%] md:left-[45%] group-hover:top-[50%] transition-all duration-500 z-40 bg-black px-4 py-2 rounded-3xl w-full'>
                                         <span
                                             onClick={() =>
                                                 setIsClicked(project.id)
                                             }
-                                            className='text-3xl text-white text-gradient cursor-pointer'>
+                                            className='text-xl md:text-3xl text-white  text-gradient'>
                                             click
                                         </span>
                                     </div>
@@ -109,11 +110,11 @@ const ImageSlider = ({ setIsClicked }: Props) => {
                     ))}
                     <button
                         onClick={Next}
-                        className='Next top-[103%] right-[20%] sm:right-[30%] md:top-1/2 md:right-[8%] lgmd:right-[10%]'>
+                        className='Next block md:hidden top-[103%] right-[10%] sm:right-[30%] md:top-1/2 md:right-[8%] lgmd:right-[10%]'>
                         <svg
                             stroke='currentColor'
                             fill='currentColor'
-                            stroke-width='0'
+                            strokeWidth='0'
                             viewBox='0 0 256 512'
                             height='20px'
                             width='20px'
@@ -123,12 +124,29 @@ const ImageSlider = ({ setIsClicked }: Props) => {
                     </button>
                 </motion.div>
             </div>
-            <div className='dots mt-[30px] lg:mt-[40px] xl:mt-[60px]'>
-                {projectData.map((_, i) => (
-                    <span
-                        key={i}
-                        onClick={() => handleClick(i)}
-                        className={currentImage === i ? 'span' : ''}></span>
+            <div className='dots mt-7'>
+                {projectData.map((project, i) => (
+                    <React.Fragment key={i}>
+                        <span
+                            key={i}
+                            onClick={() => handleClick(i)}
+                            className={`cursor-pointer md:hidden ${
+                                currentImage === i ? 'span' : ''
+                            }`}></span>
+                        <Image
+                            onClick={() => handleClick(i)}
+                            width={100}
+                            height={100}
+                            sizes=''
+                            className={`cursor-pointer w-12 h-12 rounded-md object-cover hidden md:block  ${
+                                currentImage === i
+                                    ? 'border-[3px] border-white scale-100'
+                                    : 'scale-75'
+                            } `}
+                            src={project.image}
+                            alt={project.image.src}
+                        />
+                    </React.Fragment>
                 ))}
             </div>
         </>

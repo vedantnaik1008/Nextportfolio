@@ -2,6 +2,8 @@ import { projectData } from '@/data/ProjectData';
 import React from 'react';
 import ReactPlayer from 'react-player';
 import LoadingSpinner from './LoadingSpinner';
+// import Image from 'next/image';
+// import uI from '@/images/video-unavailable-v0-yv50a61hz2ae1.webp'
 
 type Props = {
     isClicked: string;
@@ -25,7 +27,7 @@ const Modal = ({ isClicked, setIsClicked }: Props) => {
                                         <svg
                                             stroke='currentColor'
                                             fill='currentColor'
-                                            stroke-width='0'
+                                            strokeWidth='0'
                                             viewBox='0 0 24 24'
                                             color='white'
                                             height='28px'
@@ -39,13 +41,28 @@ const Modal = ({ isClicked, setIsClicked }: Props) => {
                                     </button>
                                     <div className='grid grid-cols-1 md:grid-cols-2 gap-5 h-full'>
                                         <div className=''>
-                                            <ReactPlayer
-                                                fallback={<LoadingSpinner />}
-                                                controls={true}
-                                                width='100%'
-                                                height='100%'
-                                                url={Modal.video}
-                                            />
+                                            {Modal.video.length > 0 ? (
+                                                <ReactPlayer
+                                                    fallback={
+                                                        <LoadingSpinner />
+                                                    }
+                                                    controls={true}
+                                                    width='100%'
+                                                    height='100%'
+                                                    url={Modal.video}
+                                                />
+                                            ) : (
+                                                // <Image
+                                                //     alt={`${uI}`}
+                                                //     width='100'
+                                                //     height='100'
+                                                //     src={uI}
+                                                //     className='w-full h-full object-contain'
+                                                // />
+                                                <p className='text-xl md:text-2xl font-semibold md:font-bold text-center relative top-[50%]'>
+                                                    Video Unavailable
+                                                </p>
+                                            )}
                                         </div>
                                         <div className='w-[100%] h-full'>
                                             <h1 className='text-center text-white text-2xl underline underline-offset-8'>

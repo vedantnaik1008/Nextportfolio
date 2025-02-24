@@ -43,29 +43,7 @@
     height: 10px;
     width: 10px;
 }
-.image-0{
-    left: 0%;
-    transform: translate(50%, 5%);
-    z-index: 1;
-}
 
-.image-1{
-    left: 0%;
-    transform: translate(50%, 5%);
-    z-index: 3;
-}
-
-.image-2{
-    right: 0%;
-    transform: translate(-50%, 5%);
-    z-index: 2;
-}
-
-.image-3{
-    right: 0%;
-    transform: translate(-50%, 5%);
-    z-index: 3;
-}
 
 .gradient,
 .active {
@@ -138,9 +116,9 @@
         @apply min-[320px]:translate-x-[150%] min-[320px]:duration-500 min-[320px]:transition-all;
     }
     .SlideTrue{
-        @apply min-[768px]:opacity-100 min-[768px]:z-[10] transition-all duration-300 ease-out min-[768px]:absolute min-[768px]:left-1/2 min-[768px]:-translate-x-1/2 min-[768px]:w-2/5 z-[4] md:scale-100
+        @apply min-[768px]:opacity-100 min-[768px]:z-[10] transition-all duration-300 ease-out min-[768px]:absolute min-[768px]:left-1/2 min-[768px]:-translate-x-1/2 min-[768px]:w-2/5 z-[4] md:scale-75
     }
     .SlideFalse{
-        @apply hidden md:block min-[768px]:z-[0] transition-all duration-300 ease-out min-[768px]:relative min-[768px]:w-2/5 md:scale-90
+        @apply hidden md:block min-[768px]:z-[0] transition-all duration-300 ease-out min-[768px]:relative min-[768px]:w-2/5 md:scale-50
     }
 }
