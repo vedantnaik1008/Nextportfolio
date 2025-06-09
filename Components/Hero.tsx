@@ -1,5 +1,5 @@
 'use client';
-import Images from '../images/IMG20231130114037-removebg.webp';
+import Images from '../images/1749045441192_1749045420712-removebg-preview.png';
 import { animationProps } from '../variants';
 import { Link } from 'react-scroll';
 import Image from 'next/image';

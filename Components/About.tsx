@@ -1,7 +1,7 @@
 'use client';
 import { motion } from 'framer-motion';
 import { animationProps } from '../variants';
-import img from '../images/IMG20231130114037-removebg.webp';
+import img from '../images/1749045441192_1749045420712-removebg-preview.png';
 import Image from 'next/image';
 import { Dancing_Script } from 'next/font/google';
 import Link from 'next/link';
